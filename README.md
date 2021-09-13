@@ -18,7 +18,7 @@ Download the `.jar` file from the release or compile it using the instructions b
 ```
 java -jar marchingcubes-1.0.0-jar-with-dependencies.jar -file [FILE_NAME] [N_IMAGES]
 ```
-where `FILE_NAME` is the location of the mage sequence and any other suffixes of the `.png` files. Two digits and `.png` are appended to the file name. For example, providing `x/y` will search for the files `x/y00.png`, `x/y01.png` and so on. The parameter `N_IMAGES` is an integer, the number of images in the image sequence.
+where `FILE_NAME` is the location of the mage sequence and any other prefixes of the `.png` files. Two digits and `.png` are appended to the file name. For example, providing `x/y` will search for the files `x/y00.png`, `x/y01.png` and so on. The parameter `N_IMAGES` is an integer, the number of images in the image sequence.
 
 Use the mouse (click, drag, scroll) to move the camera. Push the space bar to toggle the wire frame render.
 
