@@ -13,14 +13,14 @@ A *Java/Processing* implementation of the marching cubes algorithm, including no
 **IMPORTANT**:
 - *Java* 8 is recommended as the latest *Java* versions are not compatible [[for example]](https://stackoverflow.com/questions/59217351/exception-while-setting-up-jogl-with-intellij).
 
-Download from the `.jar` file from the release or compile it using the instructions below. Call the `.jar` file using
+Download the `.jar` file from the release or compile it using the instructions below. Call the `.jar` file using
 
 ```
 java -jar marchingcubes-1.0.0-jar-with-dependencies.jar -file [FILE_NAME] [N_IMAGES]
 ```
-where `FILE_NAME` is the location of image sequences and any other suffixes of the `.png` files. Two digits and `.png` are appended to the file name. For example, providing `x/y` will search for the files `x/y00.png`, `x/y01.png` and so on. The parameter `N_IMAGES` is an integer, the number of images in the image sequence.
+where `FILE_NAME` is the location of the mage sequence and any other suffixes of the `.png` files. Two digits and `.png` are appended to the file name. For example, providing `x/y` will search for the files `x/y00.png`, `x/y01.png` and so on. The parameter `N_IMAGES` is an integer, the number of images in the image sequence.
 
-Use the mouse (click, drag, scroll) to move the camera. Push the space to toggle the wire frame render.
+Use the mouse (click, drag, scroll) to move the camera. Push the space bar to toggle the wire frame render.
 
 *Issues*:
 - An error may occur when exiting the program, this behaviour is expected. See discussions for further information: [[X11Util.Display: Shutdown]](https://discourse.processing.org/t/x11util-display-shutdown/7292), [[Can any one tell me why do I get this error while quitting any P3D seketch]](https://discourse.processing.org/t/can-any-one-tell-me-why-do-i-get-this-error-while-quitting-any-p3d-seketch/13800)
