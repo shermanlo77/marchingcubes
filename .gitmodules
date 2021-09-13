@@ -1,0 +1,6 @@
+[submodule "peasycam"]
+	path = peasycam
+	url = https://github.com/jdf/peasycam.git
+[submodule "processing"]
+	path = processing
+	url = https://github.com/processing/processing.git
