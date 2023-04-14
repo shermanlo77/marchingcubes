@@ -1,0 +1,18 @@
+BootStrap: docker
+From: ubuntu
+
+%environment
+    export LC_ALL=C
+
+%post
+    apt update
+    apt install -y git
+    apt install -y openjdk-8-jdk
+    apt install -y maven
+    cd /usr/src
+    git clone --recurse-submodules  https://github.com/shermanlo77/marchingcubes.git
+    cd marchingcubes
+    mvn package
+
+%runscript
+    java -jar /usr/src/marchingcubes/target/marchingcubes-*-jar-with-dependencies.jar "$@"
